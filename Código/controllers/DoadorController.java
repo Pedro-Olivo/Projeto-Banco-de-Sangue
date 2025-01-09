@@ -20,7 +20,6 @@ public class DoadorController implements Icrud {
     public void remover() {
         int id = view.obterId();
         daoDoador.deletarDoadorBd(id);
-        System.out.println("Doador excluido do sistema com sucesso!");
     }
 
     @Override
@@ -30,9 +29,8 @@ public class DoadorController implements Icrud {
 
         try {
             daoDoador.atualizarDoadorBd(id, telefone);
-            System.out.println("Registro do doador atualizado com sucesso!");
         } catch (Exception e) {
-            System.out.println("Nao foi possivel atualizar o registro do doador");
+            System.out.println("");
         }
     }
     

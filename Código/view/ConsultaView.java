@@ -45,7 +45,7 @@ public class ConsultaView {
     }
 
     public int obterNovoIdMedico() {
-        System.out.println("Digite o id do novo medico: ");
+        System.out.println("Digite o id do novo medico (Formato: '2', '34', '105'): ");
         int id = scanner.nextInt();
         scanner.nextLine();
         return id;

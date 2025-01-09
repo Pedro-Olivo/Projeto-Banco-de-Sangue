@@ -2,12 +2,21 @@ package models;
 public class MedicoModel {
     protected int id;
     protected String nome;
-    protected int crm;
+    protected String crm;
     protected String especialidade;
-    protected int telefone;
+    protected String telefone;
     protected String email;
 
     public MedicoModel() {
+    }
+
+    public MedicoModel(int id, String nome, String crm, String especialidade, String telefone, String email) {
+        this.id = id;
+        this.nome = nome;
+        this.crm = crm;
+        this.especialidade = especialidade;
+        this.telefone = telefone;
+        this.email = email;
     }
 
     public int getId() {
@@ -26,11 +35,11 @@ public class MedicoModel {
         this.nome = nome;
     }
 
-    public int getCrm() {
+    public String getCrm() {
         return crm;
     }
 
-    public void setCrm(int crm) {
+    public void setCrm(String crm) {
         this.crm = crm;
     }
 
@@ -42,11 +51,11 @@ public class MedicoModel {
         this.especialidade = especialidade;
     }
 
-    public int getTelefone() {
+    public String getTelefone() {
         return telefone;
     }
 
-    public void setTelefone(int telefone) {
+    public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
 

@@ -78,7 +78,7 @@ public class DaoDoador {
             ps.execute();
             ps.close();
         } catch (SQLException e) {
-            System.out.println("Não foi possível deletar o doador =(");
+            System.out.println("Não foi possível deletar o registro do doador");
         }
 
     }

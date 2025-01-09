@@ -37,20 +37,16 @@ public class ConsultaController implements Icrud{
 
         try {
             daoConsulta.atualizarConsultaBanco(id, dataUtil, idMedico, motivoConsulta, resultado);
-            System.out.println("Consulta atualizada com sucesso");
             
         } catch (Exception e) {
-            System.out.println("Nao foi possivel atualizar a consulta");
+            System.out.println("");
         }
-
-
-        
-
     }
 
     @Override
     public void remover() {
-
+        int id = view.obterId();
+        daoConsulta.deletarConsultaBanco(id);
     }
     
 }

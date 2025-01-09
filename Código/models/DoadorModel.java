@@ -16,9 +16,6 @@ public class DoadorModel {
     protected boolean aptoDoar;
     protected String endereco;
 
-
-    
-
     public DoadorModel() {
     }
 
